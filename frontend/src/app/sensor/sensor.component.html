@@ -11,14 +11,14 @@
       <div class="col-md-2">
         <h6>TEMPERATURA <small>Ultimo valor</small></h6>
 
-        <div class = "data">
+        <div class = "data" *ngIf="currentTemp">
           <p class = "value">{{ currentTemp.value }} °C</p>
           <p class = "date">{{ currentTemp.date | date:"h:mm:ss a MM/dd/yy" }}</p>
         </div>
         
       </div>
       <div class="col-md-10">
-        <canvas id='temperature' >{{ chartTemperature }}</canvas>
+        <canvas id='temperature'>{{ chartTemperature }}</canvas>
       </div>
     </div>
   </section>
@@ -32,7 +32,7 @@
       <div class="col-md-2">
         <h6>HUMEDAD RELATIVA<br><small>Ultimo valor</small></h6>
 
-        <div class = "data">
+        <div class = "data" *ngIf="currentHum">
           <p class = "value">{{ currentHum.value }} %</p>
           <p class = "date">{{ currentHum.date | date:"h:mm:ss a MM/dd/yy" }}</p>
         </div>
