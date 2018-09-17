@@ -42,7 +42,7 @@ export class SensorComponent implements OnInit {
     		let date = new Date(Date.now());
     		if(data.data.sensor == "HUM") {
     			this.currentHum = { 
-    				'data': data.data.data, 
+    				'sensor': data.data.sensor, 
     				'value': data.data.value.toFixed(2), 
     				'date': date
     			};
@@ -54,7 +54,7 @@ export class SensorComponent implements OnInit {
     		}
     		if(data.data.sensor == "TEMP") {
     			this.currentTemp = { 
-    				'data': data.data.data, 
+    				'sensor': data.data.sensor, 
     				'value': data.data.value.toFixed(2), 
     				'date': date
     			};
