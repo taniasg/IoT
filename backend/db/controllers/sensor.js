@@ -25,7 +25,7 @@ function getHum(req, res) {
 	Sensor.find({
 		sensor:'HUM', 
 		date: { $gt: moment().subtract(15, 'minutes')}
-	}, { __v:0 }).sort({
+	}, { __v:0, _id:0 }).sort({
 		date: 1
 	}).then((data) => {
 		res.send(data);
@@ -38,7 +38,7 @@ function getTemp(req, res) {
 	Sensor.find({
 		sensor:'TEMP', 
 		date: { $gt: moment().subtract(15, 'minutes')}
-	}, { __v:0 }).sort({
+	}, { __v:0, _id:0 }).sort({
 		date: 1
 	}).then((data) => {
 		res.send(data);
