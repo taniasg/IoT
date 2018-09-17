@@ -21,7 +21,7 @@ io.on('connection', (socket)  => {
 		sensor.save();
 		
 		io.emit('data', {
-			change : "true"
+			data
 		});
 	});
 });
