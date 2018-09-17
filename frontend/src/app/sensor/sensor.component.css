@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-/*.page-header {
+.page-header {
     background-color: #1b1e21d4;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
@@ -69,4 +68,4 @@ h6 {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}*/
+}

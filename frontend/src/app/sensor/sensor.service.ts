@@ -6,7 +6,7 @@ import { Sensor } from './sensor';
 
 @Injectable()
 
-export class AppService {
+export class SensorService {
 	private url = 'http://localhost:8000/iot/sensors/';
 
 	constructor(private http: HttpClient){}

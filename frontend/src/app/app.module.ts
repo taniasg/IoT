@@ -1,21 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
+import { routing, appRoutingProviders } from './app.routing';
 
 import { AppComponent } from './app.component';
+import { SensorComponent } from './sensor/sensor.component';
 
-import { AppService } from './app.service';
+import { SensorService } from './sensor/sensor.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SensorComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    routing
   ],
   providers: [
-  	AppService
+    appRoutingProviders,
+    SensorService
   ],
   bootstrap: [AppComponent]
 })
