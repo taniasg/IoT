@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+.page-header {
+    background-color: #1b1e21d4;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+    margin-bottom: 15px;
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+}
+
+h6 {
+	font-weight: bold;
+}
+
+.value {
+    font-size: 28pt;
+}
+
+.date {
+    font-size: 12pt;
+}
+
+.data {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  top: 65%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
